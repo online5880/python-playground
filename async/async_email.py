@@ -17,7 +17,7 @@ async def send_email(subject: str, msg: str):
     message["Subject"] = f"{subject}"
     message.set_content(f"{msg}")
 
-    # SMTP 서버 정보 (실제 사용시 자신의 서버 정보를 입력하세요)
+    # SMTP 서버 정보
     smtp_host = "smtp.naver.com"
     smtp_port = 465
     
